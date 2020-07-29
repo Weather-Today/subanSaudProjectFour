@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Today's Weather</title>
+    <link href="https://fonts.googleapis.com/css?family=Oswald|Quattrocento" rel="stylesheet">
+    <link rel="stylesheet" href="./style/sass/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Varta:wght@600&display=swap" rel="stylesheet"> 
+
+    
+</head>
+<body>
+<div class="border wrapper">
+    <header class="flexContainer1">
+        <h1>Today's Weather</h1>
+        <p class="description"> Real-time weather report, just enter your city below!</p>
+        <p id="err"></p>
+    </header>
+
+    <div class="flexContainer2">
+        <h2 class="appTitle">WHAT CITY?</h2>
+        <p class="prompt"> Enter Below.</p>
+        <label class="sr-only">Enter Location</label>
+        <input type="text" class="location" placeholder="Enter Location">
+        <button class="search" id="getWeather">Get Weather</button>
+    </div>
+
+    <div class="temperature"></div>
+</div>
+
+
+    <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>
+    <script src="./assets/script.js"></script>
+</body>
+
+</html>

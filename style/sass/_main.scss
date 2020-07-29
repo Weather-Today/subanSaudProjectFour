@@ -1,0 +1,87 @@
+body {
+    // Photo by Alex Machado on Unsplash
+    background: url("../../images/alex-machado-80sv993lUKI-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+h1, h2 {
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    color: $darkBlue;
+}
+
+h1 {
+    font-size: 80px;
+}
+
+h2 {
+    font-size: 48px;
+
+}
+
+.description,
+.prompt {
+    font-family: 'Varta', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    color: $darkFont;
+}
+
+button {
+    border: 10px solid $pink;
+    border-radius: 11%;
+    background: $pink;
+    color: $darkBlue;
+    font-family: 'Varta', sans-serif;
+    font-weight: 600;
+    margin-top: 10px;
+
+}
+
+.location {
+    background: $seeThrough;
+    border: 1px solid $lightGray;
+    border-radius: 5%;
+    color: $darkBlue;
+    font-family: 'Varta', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.wrapper {
+    width:60%;
+    margin: 0 auto;
+    max-width:1020px;
+}
+.border {
+    background: $seeThrough;
+    border: 3px solid $pink;
+    border-radius: 10%;
+    padding: 30px 50px 50px 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+
+.flexContainer2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.temperature {
+    padding-top: 20px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    color: $darkFont;
+
+
+}
+
+
+    // COLOR PALLETTE
+
+
