@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
     $("#getWeather").click(function(){
-        let location = $(".location").val(); 
+        const location = $(".location").val(); 
         
         if(location != ''){
             $.ajax({
@@ -9,7 +9,7 @@ $(document).ready(function(){
                 type: "GET",
                 dataType: "json", //tested. no need for 'jsonp'
                 success: function(data){
-                    let weatherApp = show(data);
+                    const weatherApp = show(data);
                     $(".temperature").html(weatherApp);
                 }
             })
