@@ -14,13 +14,13 @@ $(function(){
                 } // reference: https://stackoverflow.com/questions/5316697/jquery-return-data-after-ajax-call-success
             })
         }else{
-            $("p.err").html('Nice Try! Please enter a valid location')
+            $(".err").html('Nice Try! Please enter a valid location')
         }
+        
+        //this function will display what is in the success callback function. So in this case, all the data. 
         
         function show(data){  
             return `<h3 class='temp'> The Weather in ${location} is Currently ${data.main.temp} C°</h3>`;
         }
     });
 });
-
-//this function will display what is in the success callback function. So in this case, all the data. 
