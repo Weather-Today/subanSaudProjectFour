@@ -275,7 +275,7 @@ button {
 }
 
 .location {
-  background: rgba(204, 209, 203, 0.4);
+  background: rgba(214, 243, 242, 0.3);
   border: 1px solid #CCD1CB;
   border-radius: 5%;
   color: #074873;
@@ -291,7 +291,7 @@ button {
 }
 
 .border {
-  background: rgba(204, 209, 203, 0.4);
+  background: rgba(214, 243, 242, 0.3);
   border: 3px solid #FFAC99;
   border-radius: 10%;
   padding: 30px 50px 50px 50px;

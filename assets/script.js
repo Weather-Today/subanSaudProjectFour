@@ -1,6 +1,6 @@
-$(document).ready(function(){
+$(function(){
 
-    $("#getWeather").click(function(){
+    $(".clickHere").click(function(){
         let location = $(".location").val(); 
         
         if(location != ''){
@@ -11,16 +11,16 @@ $(document).ready(function(){
                 success: function(data){
                     let weatherApp = show(data);
                     $(".temperature").html(weatherApp);
-                }
+                } // reference: https://stackoverflow.com/questions/5316697/jquery-return-data-after-ajax-call-success
             })
         }else{
-            $("#err").html('Opps, please enter a valid location')
+            $("p.err").html('Nice Try! Please enter a valid location')
         }
         
+        function show(data){  
+            return `<h3 class='temp'> The Weather in ${location} is Currently ${data.main.temp} C°</h3>`;
+        }
     });
 });
 
 //this function will display what is in the success callback function. So in this case, all the data. 
-function show(data){  
-    return "<h3 class='temp'> The Weather is Currently " + data.main.temp +" C°</h3>";
-}

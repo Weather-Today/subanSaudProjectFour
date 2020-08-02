@@ -42,7 +42,7 @@ button {
 }
 
 .location {
-    background: $seeThrough;
+    background: $borderBlue;
     border: 1px solid $lightGray;
     border-radius: 5%;
     color: $darkBlue;
@@ -57,7 +57,7 @@ button {
     max-width:1020px;
 }
 .border {
-    background: $seeThrough;
+    background: $borderBlue;
     border: 3px solid $pink;
     border-radius: 10%;
     padding: 30px 50px 50px 50px;
@@ -77,11 +77,5 @@ button {
     font-family: 'Oswald', sans-serif;
     font-size: 30px;
     color: $darkFont;
-
-
 }
-
-
-    // COLOR PALLETTE
-
 
