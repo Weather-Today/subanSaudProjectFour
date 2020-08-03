@@ -11,7 +11,7 @@ $(function(){
                 success: function(data){
                     let weatherApp = show(data);
                     $(".temperature").html(weatherApp);
-                } // reference: https://stackoverflow.com/questions/5316697/jquery-return-data-after-ajax-call-success
+                }
             })
         }else{
             $(".err").html('Nice Try! Please enter a valid location')
