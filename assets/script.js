@@ -5,7 +5,7 @@ $(function(){
         
         if(location != ''){
             $.ajax({
-                url: 'http://api.openweathermap.org/data/2.5/weather?q=' + location + "&units=metric" + "&APPID=ef7c53304d696d0f76cc01d25b00fd8d",
+                url: 'https://api.openweathermap.org/data/2.5/weather?q=' + location + "&units=metric" + "&APPID=ef7c53304d696d0f76cc01d25b00fd8d",
                 type: "GET",
                 dataType: "json", //tested. no need for 'jsonp'
                 success: function(data){
