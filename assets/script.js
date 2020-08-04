@@ -5,13 +5,13 @@ $(function(){
         
         if(location != ''){
             $.ajax({
-                url: 'http://api.openweathermap.org/data/2.5/weather?q=' + location + "&units=metric" + "&APPID=ef7c53304d696d0f76cc01d25b00fd8d",
+                url: '//api.openweathermap.org/data/2.5/weather?q=' + location + "&units=metric" + "&APPID=ef7c53304d696d0f76cc01d25b00fd8d",
                 type: "GET",
                 dataType: "json", //tested. no need for 'jsonp'
                 success: function(data){
                     let weatherApp = show(data);
                     $(".temperature").html(weatherApp);
-                } // reference: https://stackoverflow.com/questions/5316697/jquery-return-data-after-ajax-call-success
+                } //'success' callback reference: https://stackoverflow.com/questions/5316697/jquery-return-data-after-ajax-call-success
             })
         }else{
             $(".err").html('Nice Try! Please enter a valid location')
