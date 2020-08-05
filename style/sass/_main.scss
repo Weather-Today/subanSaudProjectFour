@@ -79,3 +79,12 @@ button {
     color: $darkFont;
 }
 
+@media (max-width: 580px) {
+    h1 {
+        font-size: 50px;
+    }
+
+    .border {
+        width: 90%;
+    }
+}
